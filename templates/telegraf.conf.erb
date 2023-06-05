@@ -8,9 +8,6 @@
   <%= key %> = "<%= value %>"
 <%   end -%>
 <% end -%>
-
-#
-
 [agent]
   hostname = "<%= @hostname %>"
   omit_hostname = <%= @omit_hostname %>
@@ -22,7 +19,7 @@
   flush_interval = "<%= @flush_interval %>"
   flush_jitter = "<%= @flush_jitter %>"
   precision = "<%= @precision %>"
-  logfile = "<%= @logfile %>"A
+  logfile = "<%= @logfile %>"
 <% if @logfile_rotation_interval -%>
   logfile_rotation_interval = "<%= @logfile_rotation_interval %>"
 <% end -%>
