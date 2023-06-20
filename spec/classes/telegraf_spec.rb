@@ -37,6 +37,10 @@ describe 'telegraf' do
           metric_batch_size: '1000',
           metric_buffer_limit: '10000',
           flush_interval: '60s',
+          # Log rotation defaults
+          logfile_rotation_interval: '0',
+          logfile_rotation_max_size: '0',
+          logfile_rotation_max_archives: 0,
           global_tags: {
             'dc' => 'dc',
             'env' => 'production',
